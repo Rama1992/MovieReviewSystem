@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
-import os
+import os.path
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -124,8 +124,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
-PROJECT_ROOT = os.path.dirname(os.path.abspath(_file_))
+try:
+    PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+except NameError:
+    import sys
+    PROJECT_ROOT = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')
 STATIC_URL = '/static/'
