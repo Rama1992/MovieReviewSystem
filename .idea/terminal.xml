@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TerminalProjectOptionsProvider">
+    <envs>
+      <env key="Path" value="C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\ramaa\AppData\Local\Programs\Python\Python37-32;C:\Users\ramaa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2019.3.1\bin;;C:\Program Files\JetBrains\PyCharm 2019.3.2\bin;;C:\Program Files\heroku\bin;C:\Users\ramaa\AppData\Local\Programs\Python\Python37-32;" />
+    </envs>
+  </component>
+</project>
